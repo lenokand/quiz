@@ -35,36 +35,7 @@ function shuffleArray(array) {
 
  shuffleArray(questions)
 
-document.addEventListener("DOMContentLoaded", function () {
-    const questions = [
-        {
-            question: "How do you create a new directory in CLI?",
-            options: ["mkdir", "rmdir", "touch", "code"],
-            correctAnswer: "mkdir"
-        },
-        {
-            question: "Which is an inline-level element in HTML?",
-            options: ["article", "fieldset", "aside", "a"],
-            correctAnswer: "a"
-        },
-        {
-            question: "Which one is not a CSS measuring unit?",
-            options: ["pt", "em", "px", "cm"],
-            correctAnswer: "cm"
-        },
-        {
-            question: "What is considered a building block of programming?",
-            options: ["Data type", "Variables", "functions", "all of them"],
-            correctAnswer: "all of them"
-        },
-        {
-            question: "Which is an example of loops in JavaScript?",
-            options: ["if else", "switch", "ternary condition", "while"],
-            correctAnswer: "while"
-        }
-    ];
-
-    let currentQuestionIndex = 0;
+ let currentQuestionIndex = 0;
     let score = 0;
 
     function displayQuestion() {
@@ -123,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     displayQuestion();
-});
+;
 
 // const questionText = document.getElementById("question-text");
 // const optionsList = document.getElementById("options-list");
