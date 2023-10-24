@@ -84,6 +84,14 @@ header img{
 }
 #result-container{
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    background-color: #f97038;
+    border-radius: 20px;
+    box-shadow: 15px 15px 5px #543028;
+    padding: 60px;
 }
 
 
