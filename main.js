@@ -1,28 +1,28 @@
 const questions = [
     {
-        question: "1What programming language is taught at Powercoders?",
-        options: ["JavaScript", "Python", "Java", "C#"],
-        correctAnswer: "JavaScript"
+        question: "How do you create a new directory in CLI?",
+        options: ["mkdir", "rmdir", "touch", "code"],
+        correctAnswer: "mkdir"
     },
     {
-        question: "2How long does the Powercoders program last?",
-        options: ["3 months", "6 months", "9 months", "1 year"],
-        correctAnswer: "6 months"
+        question: "Which is an inline level element in HTML?",
+        options: ["article", "fieldset", "aside", "a"],
+        correctAnswer: "a"
     },
     {
-        question: "3Which industry does Powercoders primarily focus on for job placement?",
-        options: ["Finance", "Healthcare", "Tech", "Retail"],
-        correctAnswer: "Tech"
+        question: "Which one is NOt a CSS measureing unit?",
+        options: ["pt", "em", "px", "cm"],
+        correctAnswer: "cm"
     },
     {
-        question: "4What is the main goal of Powercoders?",
-        options: ["Teach cooking skills", "Teach coding skills", "Teach marketing skills", "Teach gardening skills"],
-        correctAnswer: "Teach coding skills"
+        question: "What is consider as a building block of programming?",
+        options: ["Data type", "Variables", "functions", "all of them"],
+        correctAnswer: "all of them"
     },
     {
-        question: "5In which country was Powercoders founded?",
-        options: ["USA", "Germany", "Switzerland", "Japan"],
-        correctAnswer: "Switzerland"
+        question: "Which is an example of loops in JavaScript?",
+        options: ["if else", "switch", "ternary condition", "while"],
+        correctAnswer: "while"
     }
 ];
 function shuffleArray(array) {
