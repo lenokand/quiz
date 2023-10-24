@@ -54,7 +54,7 @@ function shuffleArray(array) {
         });
 
         document.getElementById("feedback-text").textContent = "Select an option and click 'Next' to continue";
-        document.getElementById("next-button").style.display = "none";
+        document.getElementById("next-button").disabled = true;
     }
 
     function checkAnswer(selectedIndex) {
@@ -70,7 +70,7 @@ function shuffleArray(array) {
             feedbackText.textContent = `Wrong. The correct answer is: ${currentQuestion.correctAnswer}`;
         }
 
-        document.getElementById("next-button").style.display = "block";
+        document.getElementById("next-button").disabled = false;
         document.querySelectorAll(".option").forEach(option => option.removeEventListener("click", checkAnswer));
     }
 

@@ -82,7 +82,9 @@ header img{
 #next-button:hover{
     background-color: #ab755d;
 }
-
+#result-container{
+    display: none;
+}
 
 
 /* 
