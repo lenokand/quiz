@@ -49,7 +49,7 @@ function shuffleArray(array) {
             const li = document.createElement("li");
             li.textContent = option;
             li.classList.add("option");
-            li.addEventListener("click", () => checkAnswer(index));
+            li.addEventListener("click", () => checkAnswer(index, li));
             optionsList.appendChild(li);
         });
 
@@ -57,16 +57,20 @@ function shuffleArray(array) {
         document.getElementById("next-button").disabled = true;
     }
 
-    function checkAnswer(selectedIndex) {
+    function checkAnswer(selectedIndex, li) {
         const currentQuestion = questions[currentQuestionIndex];
         const feedbackText = document.getElementById("feedback-text");
 
-        if (selectedIndex === -1) {
-            feedbackText.textContent = `Time's up! The correct answer is: ${currentQuestion.correctAnswer}`;
-        } else if (currentQuestion.options[selectedIndex] === currentQuestion.correctAnswer) {
+        
+         if (currentQuestion.options[selectedIndex] === currentQuestion.correctAnswer) {
+            li.style.background = "green";
+            console.log(li)
             feedbackText.textContent = "Correct!";
+            
             score++;
         } else {
+            li.style.background = "red";
+            console.log(li)
             feedbackText.textContent = `Wrong. The correct answer is: ${currentQuestion.correctAnswer}`;
         }
 
@@ -90,7 +94,7 @@ function shuffleArray(array) {
         document.getElementById("score-text").textContent = `${score} / ${questions.length}`;
 
         const messageText = document.getElementById("message-text");
-        messageText.textContent = score === questions.length ? "You are a genius!" : "You seem to have had a bad day.";
+        messageText.textContent = score === questions.length ? "You are a genius!" : "You seem to have had a bad day. :(";
     }
 
     displayQuestion();
