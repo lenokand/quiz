@@ -39,6 +39,7 @@ body {
     background-color: #f97038;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .questionBlock {
     display: flex;
@@ -68,7 +69,7 @@ header img{
     margin-left: 5%;
 }
 #next-button{
-    background-color: #543028;
+    background-color:#197C70 ;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -79,9 +80,11 @@ header img{
     margin-top: 50px;
     
 }
-#next-button:hover{
-    background-color: #ab755d;
+#next-button:hover,#next-button:disabled {
+    background-color: #197c70a8 ;
 }
+
+
 #result-container{
     display: none;
     position: absolute;
@@ -95,90 +98,8 @@ header img{
     color: #fff;
 }
 
-
-/* 
-#quiz-container {
-    margin: 10% auto;
-    width: 60%;
-    border: 2px solid #333;
-    padding: 20px;
-    background-color: #f9f9f9;
+.reload{
+    color: #197C70;
+    text-decoration: none;
+    
 }
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-}
-
-#options-list {
-    list-style: none;
-    padding: 0;
-}
-
-.option {
-    display: inline-block;
-    margin: 10px;
-    cursor: pointer;
-    padding: 10px 20px;
-    background-color: #009688;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.option:hover {
-    background-color: #007669;
-}
-
-#feedback-container {
-    margin-top: 20px;
-}
-
-#next-button {
-    background-color: #009688;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#next-button:hover {
-    background-color: #007669;
-}
-
-#result-container {
-    display: none;
-    margin: 10% auto;
-    width: 60%;
-    border: 2px solid #333;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-#result-container h2 {
-    font-size: 24px;
-}
-
-#score-text {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-#message-text {
-    font-size: 16px;
-}
-#score-bar-container {
-    margin: 20px 0;
-    width: 100%;
-}
-
-#score-bar {
-    width: 0;
-    height: 20px;
-    background-color: #009688;
-    transition: width 0.3s;
-} */
